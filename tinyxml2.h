@@ -24,7 +24,7 @@ distribution.
 #ifndef TINYXML2_INCLUDED
 #define TINYXML2_INCLUDED
 
-#if defined(ANDROID_NDK) || defined(__BORLANDC__) || defined(__QNXNTO__)
+#if defined(ANDROID_NDK) || defined(__BORLANDC__) || defined(__QNXNTO__) || defined ( __VXWORKS__ ) // AMAZON_MOD_ONELINE vxworks
 #   include <ctype.h>
 #   include <limits.h>
 #   include <stdio.h>
